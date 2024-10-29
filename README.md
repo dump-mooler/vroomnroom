@@ -5,3 +5,7 @@
 ```sh
 mkdir ../public_html/media
 ```
+--------
+
+# Also the remote development server is:
+```https://vroomnroom.kisu-makeup.com/```
