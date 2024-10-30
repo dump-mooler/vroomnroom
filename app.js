@@ -4,6 +4,7 @@ const sequelize = require('./config/database');
 const authRoutes = require('./routes/authRoutes');
 const blogRoutes = require('./routes/blogRoutes');
 const uploadRoutes = require('./routes/uploadRoutes');
+const cors = require("cors")
 
 const { seedAdmin } = require('./seedAdmin');
 
@@ -17,6 +18,8 @@ const app = express();
 
 // Middleware to parse JSON
 app.use(express.json());
+
+app.use(cors());
 
 // Serve static files
 app.use('/uploads', express.static('uploads'));
