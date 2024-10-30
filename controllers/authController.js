@@ -30,10 +30,17 @@ exports.login = async (req, res) => {
 
 exports.me = async (req, res) => {
   try {
-    console.log(req.user)
-    return res.status(200).json({
-      user: req.user
-    })
+    if (req.user.id) {
+      const user = await User.findOne({ where: { id: req.user.id } });
+      return res.status(200).json({
+        user
+      })
+    } else {
+      return res.status(400).json({
+        user: null
+      })
+    }
+    
   } catch (err) {
     return res.status(500).json({ error: err })
   }
