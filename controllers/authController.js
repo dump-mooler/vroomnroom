@@ -28,6 +28,17 @@ exports.login = async (req, res) => {
   }
 };
 
+exports.me = async (req, res) => {
+  try {
+    console.log(req.user)
+    return res.status(200).json({
+      user: req.user
+    })
+  } catch (err) {
+    return res.status(500).json({ error: err })
+  }
+}
+
 exports.updatePassword = async (req, res) => {
   const { id } = req.params;
   const { newPassword } = req.body;
