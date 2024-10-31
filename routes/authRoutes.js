@@ -1,4 +1,3 @@
-// routes/authRoutes.js
 const express = require('express');
 const { register, login, me, updatePassword } = require('../controllers/authController');
 const { authMiddleware } = require('../middleware/authMiddleware');

@@ -24,7 +24,7 @@ exports.login = async (req, res) => {
     const token = jwt.sign({ id: user.id, role: user.role }, '234qwer45t7uoklfghj7uiasd23dwed32.,.,sdfsdaf', { expiresIn: '24h' });
     res.status(200).json({ message: 'Logged in successfully', token, user });
   } catch (error) {
-    res.status(500).json({ error: 'Login failed' });
+    res.status(500).json({ error: error });
   }
 };
 
@@ -71,6 +71,6 @@ exports.updatePassword = async (req, res) => {
     res.status(200).json({ message: 'Password updated successfully' });
   } catch (error) {
     console.error('Error updating password:', error);
-    res.status(500).json({ error: 'An error occurred while updating password' });
+    res.status(500).json({ error: error });
   }
 };
