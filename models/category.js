@@ -14,4 +14,6 @@ const Category = sequelize.define('Category', {
   },
 });
 
+// Category.hasMany(require("./advert"), { foreignKey: "category" });
+
 module.exports = Category;
