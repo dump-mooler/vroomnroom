@@ -16,9 +16,7 @@ exports.register = async (req, res) => {
       .json({ message: "User created successfully", user: newUser });
   } catch (error) {
     if (error.errors.length)
-      return res
-        .status(400)
-        .json({ error: error.errors[0]?.message });
+      return res.status(400).json({ error: error.errors[0]?.message });
 
     res.status(400).json({ error: "Registration failed" });
   }
@@ -43,7 +41,7 @@ exports.login = async (req, res) => {
 };
 
 exports.me = async (req, res) => {
-  console.log(res.user)
+  console.log(res.user);
   try {
     if (req.user.id) {
       const user = await User.findOne({ where: { id: req.user.id } });
@@ -62,10 +60,33 @@ exports.me = async (req, res) => {
 
 exports.getUsers = async (req, res) => {
   try {
-    const { rows: users, count } = await User.findAndCountAll();
+    const page = parseInt(req.query.page, 10) || 1;
+    const limit = parseInt(req.query.limit, 10) || 10;
+    const search = req.query.search || "";
+
+    const options = {
+      where: {},
+      limit,
+      offset,
+    };
+
+    if (search) {
+      const searchPattern = `%${search}%`;
+      options.where = {
+        [Op.and]: [
+          {
+            [Op.or]: [{ username: { [Op.like]: searchPattern } }],
+          },
+        ],
+      };
+    }
+
+    const { rows: users, count } = await User.findAndCountAll(options);
     return res.status(200).json({
       users,
       count,
+      page,
+      totalPages: Math.ceil(count / limit),
     });
   } catch (err) {
     res.status(500).json({ error: err });
