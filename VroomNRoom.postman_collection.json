@@ -797,7 +797,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"media\": [\n        \"https://example.com/media1.jpg\",\n        \"https://example.com/media2.jpg\"\n    ],\n    \"attrs\": [\n        {\n            \"name\": \"Registered Car\",\n            \"value\": \"Yes\",\n            \"data_type\": \"str\"\n        }\n    ],\n    \"description\": \"A spacious 2-bedroom apartment with modern amenities\",\n    \"category\": 2,\n    \"price\": 10000,\n    \"city\": \"Mekelle\",\n    \"title\": \"Modern Apartment for Rent\",\n    \"level\": \"gold\",\n    \"thumbnail\": \"https://example.com/thumbnail.jpg\"\n}",
+							"raw": "{\n    \"media\": [\n        \"https://example.com/media1.jpg\",\n        \"https://example.com/media2.jpg\"\n    ],\n    \"attrs\": [\n        {\n            \"name\": \"Registered Car\",\n            \"value\": \"Yes\",\n            \"data_type\": \"str\"\n        }\n    ],\n    \"description\": \"A spacious 2-bedroom apartment with modern amenities\",\n    \"category\": 2,\n    \"price\": 10000,\n    \"city\": \"Mekelle\",\n    \"title\": \"Modern Apartment for Rent\",\n    \"level\": \"silver\",\n    \"thumbnail\": \"https://example.com/thumbnail.jpg\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
