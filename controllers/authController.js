@@ -100,12 +100,6 @@ exports.updatePassword = async (req, res) => {
       return res.status(404).json({ error: "User not found" });
     }
 
-    console.log(user.role)
-
-    // if (!["author", "admin"].includes(user.role)) {
-    //   return res.status(403).json({ error: "Unauthorized to update password" });
-    // }
-
     const hashedPassword = await bcrypt.hash(newPassword, 10);
     user.password = hashedPassword;
     await user.save();

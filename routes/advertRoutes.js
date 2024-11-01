@@ -4,6 +4,7 @@ const {
   getAdverts,
   deleteAdvert,
   closeAdvert,
+  updateAdvert,
 } = require("../controllers/advertController");
 const { authMiddleware } = require("../middleware/authMiddleware");
 
@@ -14,7 +15,7 @@ const router = express.Router();
 
 router.get("/", getAdverts);
 router.post("/", authMiddleware, validate(create), createAdvert);
-router.put("/:id", authMiddleware, validate(update), createAdvert);
+router.put("/:id", authMiddleware, validate(update), updateAdvert);
 router.put("/close-advert/:id", authMiddleware, closeAdvert);
 router.delete("/:id", authMiddleware, deleteAdvert);
 
