@@ -17,6 +17,19 @@ const create = Joi.object({
   media: Joi.array().items(Joi.string()),
   thumbnail: Joi.string(),
   attrs: Joi.array().items(attribute),
+  isSold: Joi.boolean().optional()
 });
 
-module.exports = { create };
+const update = Joi.object({
+  description: Joi.string().required(),
+  category: Joi.number().required(),
+  price: Joi.number().required(),
+  city: Joi.string().required(),
+  title: Joi.string(),
+  level: Joi.string().valid("bronze", "silver", "gold", "diamond").required(),
+  media: Joi.array().items(Joi.string()),
+  thumbnail: Joi.string(),
+  attrs: Joi.array().items(attribute),
+});
+
+module.exports = { create, update };

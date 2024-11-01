@@ -59,6 +59,10 @@ const Advert = sequelize.define("Advert", {
       this.setDataValue("attrs", JSON.stringify(value));
     },
   },
+  isSold: {
+    type: DataTypes.BOOLEAN,
+    defaultValue: false
+  }
 });
 
 // Advert.belongsTo(Category, { foreignKey: "category" });

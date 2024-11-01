@@ -102,7 +102,7 @@ exports.updateBlog = async (req, res) => {
     blog.body = body || blog.body;
     blog.location = location || blog.location;
     await blog.save();
-    res.status(200).json(blog);
+    res.status(201).json(blog);
   } catch (error) {
     res.status(500).json({ error: 'Failed to update blog' });
   }

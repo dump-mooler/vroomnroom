@@ -21,6 +21,9 @@ exports.getAdverts = async (req, res) => {
   const limit = parseInt(req.query.limit, 10) || 10;
   const search = req.query.search || "";
   const category = req.query.category || "";
+  const city = req.query.city || "";
+  const minPrice = parseFloat(req.query.minPrice);
+  const maxPrice = parseFloat(req.query.maxPrice);
 
   const offset = (page - 1) * limit;
   try {
@@ -48,6 +51,20 @@ exports.getAdverts = async (req, res) => {
       options.where.category = category;
     }
 
+    if (city) {
+      options.where.city = city;
+    }
+
+    if (minPrice || maxPrice) {
+      options.where.price = {};
+      if (minPrice) {
+        options.where.price[Op.gte] = minPrice;
+      }
+      if (maxPrice) {
+        options.where.price[Op.lte] = maxPrice;
+      }
+    }
+
     const { rows: adverts, count } = await Advert.findAndCountAll({
       ...options,
       include: [
@@ -67,6 +84,102 @@ exports.getAdverts = async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err });
   }
+};
+
+exports.closeAdvert = async (req, res) => {
+  try {
+    const _advert = await Advert.findByPk(req.params.id);
+    if (!_advert) {
+      return res.status(404).json({ error: "Advert not found" });
+    }
+    const advert = await Advert.update(
+      { isSold: true },
+      { where: { id: req.params.id } }
+    );
+    res.status(201).json({ advert });
+  } catch (err) {
+    res.status(500).json({ error: err });
+  }
+};
+
+exports.updateAdvert = async (req, res) => {
+  try {
+    const _advert = await Advert.findByPk(req.params.id);
+    if (!_advert) {
+      return res.status(404).json({ error: "Advert not found" });
+    }
+
+    const {
+      media,
+      attrs,
+      description,
+      category,
+      price,
+      city,
+      title,
+      level,
+      thumbnail,
+    } = req.body;
+
+    const advert = await Advert.update(
+      {
+        media,
+        attrs,
+        description,
+        category,
+        price,
+        city,
+        title,
+        level,
+        thumbnail,
+      },
+      { where: { id: req.params.id } }
+    );
+    res.status(201).json({ advert });
+  } catch (err) {
+    res.status(500).json({ error: err });
+  }
+  // try {
+  //   const _advert = await Advert.findByPk(req.params.id);
+  //   if (!_advert) {
+  //     return res.status(404).json({ error: "Advert not found" });
+  //   }
+
+  //   const {
+  //     media,
+  //     attrs,
+  //     description,
+  //     category,
+  //     price,
+  //     city,
+  //     title,
+  //     level,
+  //     thumbnail,
+  //   } = req.body;
+
+  //   const advert = await Advert.update(
+  //     {
+  //       media,
+  //       attrs,
+  //       description,
+  //       category,
+  //       price,
+  //       city,
+  //       title,
+  //       level,
+  //       thumbnail,
+  //     },
+  //     {
+  //       where: { id: req.params.id },
+  //     }
+  //   );
+
+  //   const updatedAdvert = await Advert.findByPk(req.params.id);
+
+  //   res.status(201).json({ advert: updatedAdvert });
+  // } catch (err) {
+  //   res.status(500).json({ error: err });
+  // }
 };
 
 exports.deleteAdvert = async (req, res) => {

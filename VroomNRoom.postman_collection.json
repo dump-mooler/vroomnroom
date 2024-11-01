@@ -32,7 +32,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"author469\",\n    \"password\": \"password\",\n    \"role\": [\"author\"]\n}  ",
+							"raw": "{\n    \"username\": \"author42\",\n    \"password\": \"password\",\n    \"role\": \"manager\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -138,7 +138,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"newPassword\": \"pussy\"\n}",
+							"raw": "{\n    \"newPassword\": \"pass-word\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -146,14 +146,97 @@
 							}
 						},
 						"url": {
-							"raw": "{{url}}/auth/update-password/3",
+							"raw": "{{url}}/auth/update-password/2",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"auth",
 								"update-password",
-								"3"
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/auth",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUser",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/auth/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/auth/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth",
+								"2"
 							]
 						}
 					},
@@ -477,6 +560,384 @@
 							"path": [
 								"blogs",
 								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "advert",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"description\": \"A spacious 2-bedroom apartment with modern amenities\",\n    \"price\": 1200,\n    \"city\": \"Addis Ababa\",\n    \"title\": \"Modern Apartment for Rent\",\n    \"level\": \"gold\",\n    \"media\": [\n        \"https://example.com/media1.jpg\",\n        \"https://example.com/media2.jpg\"\n    ],\n    \"thumbnail\": \"https://example.com/thumbnail.jpg\",\n    \"attrs\": [\n        {\n            \"name\": \"Registered Car\",\n            \"value\": \"Yes\",\n            \"data_type\": \"str\"\n        }\n    ],\n    \"category\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/advert",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"advert"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\": \"A spacious 2-bedroom apartment with modern amenities\",\n    \"price\": 1200,\n    \"city\": \"Addis Ababa\",\n    \"title\": \"Modern Apartment for Rent\",\n    \"level\": \"gold\",\n    \"media\": [\n        {\n            \"url\": \"https://example.com/media1.jpg\",\n            \"description\": \"Living room view\"\n        },\n        {\n            \"url\": \"https://example.com/media2.jpg\",\n            \"description\": \"Kitchen area\"\n        }\n    ],\n    \"thumbnail\": \"https://example.com/thumbnail.jpg\",\n    \"attrs\": [\n        {\n            \"name\": \"Registered Car\",\n            \"value\": \"Yes\",\n            \"data_type\": \"str\",\n            \"unit\": null,\n            \"group_type\": \"value\"\n        }\n    ],\n    \"category\": 1\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/advert",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"advert"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "556"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"22c-rB7YieTc4b0kuPbr2eDWTpnseEA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 31 Oct 2024 20:09:46 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"media\": [\n        {\n            \"url\": \"https://example.com/media1.jpg\",\n            \"description\": \"Living room view\"\n        },\n        {\n            \"url\": \"https://example.com/media2.jpg\",\n            \"description\": \"Kitchen area\"\n        }\n    ],\n    \"attrs\": [\n        {\n            \"name\": \"Registered Car\",\n            \"value\": \"Yes\",\n            \"data_type\": \"str\",\n            \"unit\": null,\n            \"group_type\": \"value\"\n        }\n    ],\n    \"id\": 1,\n    \"description\": \"A spacious 2-bedroom apartment with modern amenities\",\n    \"price\": 1200,\n    \"city\": \"Addis Ababa\",\n    \"title\": \"Modern Apartment for Rent\",\n    \"level\": \"gold\",\n    \"thumbnail\": \"https://example.com/thumbnail.jpg\",\n    \"category\": 1,\n    \"updatedAt\": \"2024-10-31T20:09:46.795Z\",\n    \"createdAt\": \"2024-10-31T20:09:46.795Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/advert?search=modern&page=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"advert"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "modern"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "minPrice",
+									"value": "5000",
+									"disabled": true
+								},
+								{
+									"key": "maxPrice",
+									"value": "20000",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "Mekelle",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/advert/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"advert",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "closeRequest",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/advert/close-advert/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"advert",
+								"close-advert",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"media\": [\n        \"https://example.com/media1.jpg\",\n        \"https://example.com/media2.jpg\"\n    ],\n    \"attrs\": [\n        {\n            \"name\": \"Registered Car\",\n            \"value\": \"Yes\",\n            \"data_type\": \"str\"\n        }\n    ],\n    \"description\": \"A spacious 2-bedroom apartment with modern amenities\",\n    \"category\": 2,\n    \"price\": 10000,\n    \"city\": \"Mekelle\",\n    \"title\": \"Modern Apartment for Rent\",\n    \"level\": \"gold\",\n    \"thumbnail\": \"https://example.com/thumbnail.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/advert/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"advert",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"HOUSE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/category",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/category",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/category/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/category/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"category",
+								"2"
 							]
 						}
 					},
