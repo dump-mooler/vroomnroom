@@ -1,6 +1,7 @@
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const User = require("../models/user");
+const { Op } = require("sequelize");
 
 exports.register = async (req, res) => {
   const { username, password, role } = req.body;
@@ -25,7 +26,9 @@ exports.register = async (req, res) => {
 exports.login = async (req, res) => {
   const { username, password } = req.body;
   try {
-    const user = await User.findOne({ where: { username } });
+    const user = await User.findOne({
+      where: { username },
+    });
     if (!user || !(await bcrypt.compare(password, user.password))) {
       return res.status(401).json({ message: "Invalid credentials" });
     }
@@ -34,7 +37,15 @@ exports.login = async (req, res) => {
       "234qwer45t7uoklfghj7uiasd23dwed32.,.,sdfsdaf",
       { expiresIn: "24h" }
     );
-    res.status(200).json({ message: "Logged in successfully", token, user });
+
+    const _user = await User.findOne({
+      where: { username },
+      attributes: { exclude: ["password"] },
+    });
+
+    res
+      .status(200)
+      .json({ message: "Logged in successfully", token, user: _user });
   } catch (error) {
     res.status(500).json({ error: error });
   }
@@ -44,7 +55,10 @@ exports.me = async (req, res) => {
   console.log(res.user);
   try {
     if (req.user.id) {
-      const user = await User.findOne({ where: { id: req.user.id } });
+      const user = await User.findOne({
+        where: { id: req.user.id },
+        attributes: { exclude: ["password"] },
+      });
       return res.status(200).json({
         user,
       });
@@ -69,6 +83,7 @@ exports.getUsers = async (req, res) => {
       where: {},
       limit,
       offset,
+      attributes: { exclude: ["password"] },
     };
 
     if (search) {
@@ -90,6 +105,7 @@ exports.getUsers = async (req, res) => {
       totalPages: Math.ceil(count / limit),
     });
   } catch (err) {
+    console.log(err);
     res.status(500).json({ error: err });
   }
 };
@@ -100,6 +116,8 @@ exports.getUser = async (req, res) => {
     if (!user) {
       return res.status(404).json({ error: "User not found" });
     }
+
+    delete user.password;
     res.status(200).json({
       user,
     });
