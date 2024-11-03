@@ -1,5 +1,3 @@
-// const Advert = require("../models/advert");
-// const Category = require("../models/advert");
 const { Advert, Category } = require("../models");
 
 const sequelize = require("sequelize");
@@ -13,6 +11,27 @@ exports.createAdvert = async (req, res) => {
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: "Failed to create advert" });
+  }
+};
+
+exports.getAdvert = async (req, res) => {
+  try {
+    const _advert = await Advert.findByPk(req.params.id, {
+      include: [
+        {
+          model: Category,
+          attributes: ["id", "name"],
+        },
+      ],
+    });
+    if (!_advert) {
+      return res.status(404).json({ error: "Advert not found" });
+    }
+    res.status(200).json({
+      advert: _advert,
+    });
+  } catch (error) {
+    res.status(500).json({ error });
   }
 };
 
