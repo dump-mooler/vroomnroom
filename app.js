@@ -30,9 +30,9 @@ app.use(cors());
 app.use("/uploads", express.static("uploads"));
 
 // Routes
+app.use("/advert", advertRoutes);
 app.use("/auth", authRoutes);
 app.use("/category", categoryRoutes);
-app.use("/advert", advertRoutes);
 app.use("/blogs", blogRoutes);
 app.use("/", uploadRoutes); // Added upload route
 
