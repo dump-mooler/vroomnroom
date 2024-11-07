@@ -14,10 +14,10 @@ exports.createBlog = async (req, res) => {
 };
 
 exports.getBlogs = async (req, res) => {
-  const page = parseInt(req.query.page, 10) || 1;
-  const limit = parseInt(req.query.limit, 10) || 10;
-  const search = req.query.search || '';
-  const location = req.query.location || '';
+  const page = parseInt(req.body.page, 10) || 1;
+  const limit = parseInt(req.body.limit, 10) || 10;
+  const search = req.body.search || '';
+  const location = req.body.location || '';
 
   const offset = (page - 1) * limit;
 

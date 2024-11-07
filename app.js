@@ -13,8 +13,7 @@ const { seedAdmin, seedManager, seedCategory } = require("./seed");
 async function runSeeder() {
   await seedAdmin();
   await seedManager();
-  await seedCategory()
-
+  await seedCategory();
 }
 
 runSeeder();
@@ -41,7 +40,6 @@ app.use("/", uploadRoutes); // Added upload route
 // sequelize.sync({ force: true }).then(() => {
 //   console.log("Database connected");
 // });
-
 
 // Sync database and start the server
 

@@ -36,14 +36,14 @@ exports.getAdvert = async (req, res) => {
 };
 
 exports.getAdverts = async (req, res) => {
-  const page = parseInt(req.query.page, 10) || 1;
-  const limit = parseInt(req.query.limit, 10) || 10;
-  const search = req.query.search || "";
-  const category = req.query.category || "";
-  const level = req.query.level || "";
-  const city = req.query.city || "";
-  const minPrice = parseFloat(req.query.minPrice);
-  const maxPrice = parseFloat(req.query.maxPrice);
+  const page = parseInt(req.body.page, 10) || 1;
+  const limit = parseInt(req.body.limit, 10) || 10;
+  const search = req.body.search || "";
+  const category = req.body.category || "";
+  const level = req.body.level || "";
+  const city = req.body.city || "";
+  const minPrice = parseFloat(req.body.minPrice);
+  const maxPrice = parseFloat(req.body.maxPrice);
 
   const offset = (page - 1) * limit;
   try {
