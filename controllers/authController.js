@@ -74,9 +74,10 @@ exports.me = async (req, res) => {
 
 exports.getUsers = async (req, res) => {
   try {
-    const page = parseInt(req.body.page, 10) || 1;
-    const limit = parseInt(req.body.limit, 10) || 10;
-    const search = req.body.search || "";
+    const filters = req.headers.filters ? JSON.parse(req.headers.filters) : {};
+    const page = parseInt(filters.page, 10) || 1;
+    const limit = parseInt(filters.limit, 10) || 10;
+    const search = filters.search || "";
     const offset = (page - 1) * limit;
 
     const options = {

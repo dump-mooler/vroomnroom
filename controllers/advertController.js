@@ -36,14 +36,15 @@ exports.getAdvert = async (req, res) => {
 };
 
 exports.getAdverts = async (req, res) => {
-  const page = parseInt(req.body.page, 10) || 1;
-  const limit = parseInt(req.body.limit, 10) || 10;
-  const search = req.body.search || "";
-  const category = req.body.category || "";
-  const level = req.body.level || "";
-  const city = req.body.city || "";
-  const minPrice = parseFloat(req.body.minPrice);
-  const maxPrice = parseFloat(req.body.maxPrice);
+  const filters = req.headers.filters ? JSON.parse(req.headers.filters) : {};
+  const page = parseInt(filters.page, 10) || 1;
+  const limit = parseInt(filters.limit, 10) || 10;
+  const search = filters.search || "";
+  const category = filters.category || "";
+  const level = filters.level || "";
+  const city = filters.city || "";
+  const minPrice = parseFloat(filters.minPrice);
+  const maxPrice = parseFloat(filters.maxPrice);
 
   const offset = (page - 1) * limit;
   try {
