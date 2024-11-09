@@ -35,8 +35,28 @@ exports.getAdvert = async (req, res) => {
   }
 };
 
+exports.getLocations = async (req, res) => {
+  try {
+    const locations = await Advert.findAll({
+      attributes: [[sequelize.fn('DISTINCT', sequelize.col('city')), 'city']],
+      where: {
+        city: {
+          [Op.not]: null
+        }
+      },
+      raw: true
+    });
+
+    const cities = locations.map(location => location.city).filter(Boolean);
+    res.status(200).json(cities);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch locations" });
+  }
+};
+
 exports.getAdverts = async (req, res) => {
   const filters = req.headers.filters ? JSON.parse(req.headers.filters) : {};
+  console.log({filters: req.headers.filters})
   const page = parseInt(filters.page, 10) || 1;
   const limit = parseInt(filters.limit, 10) || 10;
   const search = filters.search || "";
@@ -52,6 +72,7 @@ exports.getAdverts = async (req, res) => {
       where: {},
       limit,
       offset,
+      order: [['createdAt', 'DESC']]
     };
 
     if (search) {
