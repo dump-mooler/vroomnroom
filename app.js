@@ -6,7 +6,10 @@ const categoryRoutes = require("./routes/categoryRoutes");
 const advertRoutes = require("./routes/advertRoutes");
 const blogRoutes = require("./routes/blogRoutes");
 const uploadRoutes = require("./routes/uploadRoutes");
+const cacheMiddleware = require("./middleware/cache")
 const cors = require("cors");
+const redis = require("redis");
+
 
 const { seedAdmin, seedManager, seedCategory } = require("./seed");
 
@@ -29,17 +32,15 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Custom-Header', 'filters'],
 }));
 
-// app.use(cors())
-
 // Serve static files
 app.use("/uploads", express.static("uploads"));
 
-// Routes
-app.use("/advert", advertRoutes);
-app.use("/auth", authRoutes);
-app.use("/category", categoryRoutes);
-app.use("/blogs", blogRoutes);
-app.use("/", uploadRoutes); // Added upload route
+// Routes with cache
+app.use("/advert", cacheMiddleware(300), advertRoutes);  // Cache for 5 minutes
+app.use("/category", cacheMiddleware(3600), categoryRoutes);  // Cache for 1 hour
+app.use("/blogs", cacheMiddleware(600), blogRoutes);  // Cache for 10 minutes
+app.use("/auth", authRoutes);  // No cache for auth routes
+app.use("/", uploadRoutes);  // No cache for upload routes
 
 // force //
 

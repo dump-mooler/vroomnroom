@@ -1,12 +1,18 @@
 const { Advert, Category } = require("../models");
+const redisClient = require('../config/redisClient');
 
 const sequelize = require("sequelize");
 const { Op } = require("sequelize");
 
 exports.createAdvert = async (req, res) => {
-  console.log(req.body);
   try {
     const newAdvert = await Advert.create(req.body);
+
+    const keys = await redisClient.keys('/advert*');
+    if (keys.length > 0) {
+      await redisClient.del(keys);
+    }
+
     res.status(201).json(newAdvert);
   } catch (error) {
     console.log(error);
@@ -181,6 +187,12 @@ exports.updateAdvert = async (req, res) => {
       },
       { where: { id: req.params.id } }
     );
+
+    const keys = await redisClient.keys('/advert*');
+    if (keys.length > 0) {
+      await redisClient.del(keys);
+    }
+    
     res.status(201).json({ advert });
   } catch (err) {
     res.status(500).json({ error: err });
