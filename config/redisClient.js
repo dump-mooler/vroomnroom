@@ -8,14 +8,14 @@ const redisSocketPath = '/home/kisumake/tmp/redis.sock';
 //   }
 // });
 
-// const redisClient = redis.createClient({
-//   url: 'redis://localhost:6379'
-// });
-
 const redisClient = redis.createClient({
-  url: 'redis://127.0.0.1:48835', // IP and port
-  password: 'tIqZkWHKhbjuKHeGDeZ', // Password
+  url: 'redis://localhost:6379'
 });
+
+// const redisClient = redis.createClient({
+//   url: 'redis://127.0.0.1:48835', // IP and port
+//   password: 'tIqZkWHKhbjuKHeGDeZ', // Password
+// });
 
 const connectRedis = async () => {
   try {

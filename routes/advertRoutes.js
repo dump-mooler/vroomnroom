@@ -6,7 +6,8 @@ const {
   closeAdvert,
   updateAdvert,
   getAdvert,
-  getLocations
+  getLocations,
+  dashboard
 } = require("../controllers/advertController");
 const { authMiddleware } = require("../middleware/authMiddleware");
 const cacheMiddleware = require("../middleware/cache");
@@ -18,6 +19,8 @@ const router = express.Router();
 
 router.get("/", cacheMiddleware(300), getAdverts);
 router.get('/locations', cacheMiddleware(300), getLocations)
+router.get("/dashboard", dashboard);
+// router.get("/dashboard", cacheMiddleware(300), dashboard);
 router.get("/:id", cacheMiddleware(300), getAdvert);
 router.post("/", authMiddleware, validate(create), createAdvert);
 router.put("/:id", authMiddleware, validate(update), updateAdvert);
