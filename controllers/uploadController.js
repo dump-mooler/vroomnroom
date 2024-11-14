@@ -31,7 +31,8 @@ exports.uploadImage = (req, res) => {
       return res.status(500).json({ error: err.message });
     }
 
-    const BASE_URL = "https://kisu-makeup.com/media";
+    // const BASE_URL = "https://kisu-makeup.com/media";
+    const BASE_URL = "https://api.banatrading.com/media";
 
     const files = req.files.map((file) => `${BASE_URL}/${file.filename}`);
     res.status(200).json({ message: "Media uploaded successfully", files });

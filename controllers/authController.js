@@ -1,16 +1,18 @@
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const User = require("../models/user");
+const { User } = require("../models");
 const { Op } = require("sequelize");
 
 exports.register = async (req, res) => {
-  const { username, password, role } = req.body;
+  const { fullName, username, password, role, phoneNumbers } = req.body;
   try {
     const hashedPassword = await bcrypt.hash(password, 10);
     const newUser = await User.create({
+      fullName: fullName,
       username,
       password: hashedPassword,
       role: [role],
+      phoneNumbers: [phoneNumbers],
     });
     res
       .status(201)
@@ -151,6 +153,25 @@ exports.updatePassword = async (req, res) => {
     res.status(500).json({ error: error });
   }
 };
+
+exports.updateUser = async (req, res) => {
+  const { id } = req.params;
+  const { fullName, phoneNumbers } = req.body;
+  try {
+    const user = await User.findByPk(id);
+    if (!user) {
+      return res.status(404).json({ error: "User not found" });
+    }
+    user.fullName = fullName
+    user.phoneNumbers = [phoneNumbers];
+    await user.save();
+    res.status(200).json({ message: "User updated successfully" });
+  } catch (error) {
+    console.error("Error updating user:", error);
+    res.status(500).json({ error: error });
+  }
+};
+
 
 exports.deleteUser = async (req, res) => {
   try {

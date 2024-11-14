@@ -1,0 +1,862 @@
+[
+  {
+    "media": [
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F11567210-fc44-457d-84b6-b07097d59ae7%2F13_1_32ff06c1_ddd2_4b03_986a_d5b416e3c8b3_182d0ed7c0.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F48d02235-f940-4ba3-8622-03c61289c584%2F11_1_eb389bd6_a6a4_4a9f_86c4_83f2bdf731a2_3f5148edd5.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2Fff709818-ceeb-4cb1-adf2-372045ea48ac%2F3166eda8-d35d-4ff5-a3b4-95c0c62b76ca%2F03_1_8461dc65_1d59_4eff_bdba_01980fc4269b_f645b7dcc3.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F7085c1a7-c01c-499e-a640-71c051a234f3%2F68f93336-e2d4-4268-bcdc-29dc66244a71%2F13_1_a9b90534_4095_42e6_8378_38bf6a06babe_afa8613307.png&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F9d9054b1-9fba-4a2a-8911-9afa9018e332%2Fe2d597ea-0d09-4156-9659-81a801955c70%2F57_1_5ca2fd6e_a08e_49f5_993d_eb8ba611e12f_733fb218cf.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2Fdb62e0b8-877b-477b-8097-dbb1ae2a9716%2F11_1_f4dc87e4_e94a_4c5e_993e_5ede6243c6fc_75f63b1a40.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F1c5e3757-beb8-4ce2-8592-bd8bad7d6e5e%2F41_1_65aa6a6b_935f_4b3f_a6b5_38b3f23e4526_981a89fb64.jpeg&w=640&q=75",
+      "https://kisu-makeup.com/media/media-1730744824788-729629525.mp4"
+    ],
+    "attrs": [
+      {
+        "name": "Year",
+        "value": "2022",
+        "data_type": "int"
+      },
+      {
+        "name": "Battery Capacity",
+        "value": "93.4 kWh",
+        "data_type": "str"
+      },
+      {
+        "name": "Transmission",
+        "value": "Automatic",
+        "data_type": "str"
+      },
+      {
+        "name": "Range",
+        "value": "488 km",
+        "data_type": "str"
+      },
+      {
+        "name": "Color",
+        "value": "White",
+        "data_type": "str"
+      },
+      {
+        "name": "Condition",
+        "value": "New",
+        "data_type": "str"
+      },
+      {
+        "name": "Registered Car",
+        "value": "Yes",
+        "data_type": "str"
+      }
+    ],
+    "description": "A sleek 2022 Audi e-tron GT with impressive electric performance and luxurious interior.",
+    "category": 2,
+    "price": 1450000,
+    "city": "Addis Ababa",
+    "title": "Bugatti Cheron 2022 - Luxury EV",
+    "level": "diamond",
+    "thumbnail": "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F1c5e3757-beb8-4ce2-8592-bd8bad7d6e5e%2F41_1_65aa6a6b_935f_4b3f_a6b5_38b3f23e4526_981a89fb64.jpeg&w=640&q=75",
+    "isSold": false
+  },
+  {
+    "media": [
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F11567210-fc44-457d-84b6-b07097d59ae7%2F13_1_32ff06c1_ddd2_4b03_986a_d5b416e3c8b3_182d0ed7c0.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F48d02235-f940-4ba3-8622-03c61289c584%2F11_1_eb389bd6_a6a4_4a9f_86c4_83f2bdf731a2_3f5148edd5.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2Fff709818-ceeb-4cb1-adf2-372045ea48ac%2F3166eda8-d35d-4ff5-a3b4-95c0c62b76ca%2F03_1_8461dc65_1d59_4eff_bdba_01980fc4269b_f645b7dcc3.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F7085c1a7-c01c-499e-a640-71c051a234f3%2F68f93336-e2d4-4268-bcdc-29dc66244a71%2F13_1_a9b90534_4095_42e6_8378_38bf6a06babe_afa8613307.png&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F9d9054b1-9fba-4a2a-8911-9afa9018e332%2Fe2d597ea-0d09-4156-9659-81a801955c70%2F57_1_5ca2fd6e_a08e_49f5_993d_eb8ba611e12f_733fb218cf.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2Fdb62e0b8-877b-477b-8097-dbb1ae2a9716%2F11_1_f4dc87e4_e94a_4c5e_993e_5ede6243c6fc_75f63b1a40.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F1c5e3757-beb8-4ce2-8592-bd8bad7d6e5e%2F41_1_65aa6a6b_935f_4b3f_a6b5_38b3f23e4526_981a89fb64.jpeg&w=640&q=75",
+      "https://kisu-makeup.com/media/media-1730744824788-729629525.mp4"
+    ],
+    "attrs": [
+      {
+        "name": "Year",
+        "value": "2022",
+        "data_type": "int"
+      },
+      {
+        "name": "Battery Capacity",
+        "value": "93.4 kWh",
+        "data_type": "str"
+      },
+      {
+        "name": "Transmission",
+        "value": "Automatic",
+        "data_type": "str"
+      },
+      {
+        "name": "Range",
+        "value": "488 km",
+        "data_type": "str"
+      },
+      {
+        "name": "Color",
+        "value": "White",
+        "data_type": "str"
+      },
+      {
+        "name": "Condition",
+        "value": "New",
+        "data_type": "str"
+      },
+      {
+        "name": "Registered Car",
+        "value": "Yes",
+        "data_type": "str"
+      }
+    ],
+    "description": "A sleek 2022 Audi e-tron GT with impressive electric performance and luxurious interior.",
+    "category": 2,
+    "price": 1450000,
+    "city": "Addis Ababa",
+    "title": "Audi e-tron GT 2022 - Luxury EV",
+    "level": "diamond",
+    "thumbnail": "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F11567210-fc44-457d-84b6-b07097d59ae7%2F13_1_32ff06c1_ddd2_4b03_986a_d5b416e3c8b3_182d0ed7c0.jpeg&w=640&q=75",
+    "isSold": false
+  },
+  {
+    "media": [
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F13366f37-066a-48b7-a22f-bfc6123a873b%2Fbc537763-2ea3-4688-8e35-0fa3b79fb0ae%2F30_1_6602d665_7c3c_46b6_8b4f_d1688834f82c_098a8efb69.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F36e9d4ec-3b89-41d1-aa15-3630b03885bf%2Fccb343b3-1131-45e8-b7e2-ea368ca3703e%2F54_1_c6f5ee83_cb13_4ee8_98e7_cb740ad9feb0_ca48e07e5b.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F13366f37-066a-48b7-a22f-bfc6123a873b%2Fc9bee614-74b3-4039-84b0-e042bf3e2071%2F04_1_1952da6a_511b_4358_9649_3e7b73b32e14_794bbf2c49.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F50551e7e-c573-4b2d-a0bd-74c4d26b3e97%2F12_1_f5b3ede1_f9df_4596_86cd_b9b2d33409f6_bc1c35ba0d.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F13366f37-066a-48b7-a22f-bfc6123a873b%2Fd627e4c9-a289-4b17-a050-72a72add48b0%2F52_1_78e6fa9c_3702_445c_918f_9dec179c5425_3eb0fac89e.jpeg&w=640&q=75",
+      "https://kisu-makeup.com/media/media-1730744824677-458885563.mp4"
+    ],
+    "attrs": [
+      {
+        "name": "Year",
+        "value": "2022",
+        "data_type": "int"
+      },
+      {
+        "name": "Mileage",
+        "value": "5,500 km",
+        "data_type": "str"
+      },
+      {
+        "name": "Transmission",
+        "value": "Automatic",
+        "data_type": "str"
+      },
+      {
+        "name": "Engine",
+        "value": "3.5L EcoBoost V6",
+        "data_type": "str"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "data_type": "str"
+      },
+      {
+        "name": "Condition",
+        "value": "New",
+        "data_type": "str"
+      },
+      {
+        "name": "Registered Car",
+        "value": "Yes",
+        "data_type": "str"
+      }
+    ],
+    "description": "A rugged 2022 Ford Raptor designed for intense off-road performance and tough terrains.",
+    "category": 2,
+    "price": 1100000,
+    "city": "Addis Ababa",
+    "title": "Ford Raptor 2022 - Off-Road Monster",
+    "level": "gold",
+    "thumbnail": "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F13366f37-066a-48b7-a22f-bfc6123a873b%2Fbc537763-2ea3-4688-8e35-0fa3b79fb0ae%2F30_1_6602d665_7c3c_46b6_8b4f_d1688834f82c_098a8efb69.jpeg&w=640&q=75",
+    "isSold": false
+  },
+  {
+    "media": [
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F00044857-1ed1-4cb1-a277-de23ef97c32c%2F34_1_cf72e1dc_f41e_4043_9808_8d6bf81f3694_b52ef873ce.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F9ed0d3d8-affb-4d82-b004-47fb595ae1f7%2F59_1_7db525c5_dd84_42c8_b20b_2711e8374dd1_265d747ad6.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F2347d4c5-2391-4190-a549-d53ddef83a44%2Fbc1b8336-029a-47b8-b14d-d866173b6ffb%2F51_1_1e729797_f8c9_40d3_be73_a1dcf33b7c5b_58bd76a56f.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F36e9d4ec-3b89-41d1-aa15-3630b03885bf%2F775e0489-283c-42ca-8f86-f6d4381f60af%2F35_1_eb00ccd3_348b_4016_9aff_ba34ad9b337d_c391160a2f.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2Fb2f55fd6-054b-40a0-867f-4e7709ace07e%2F632a9a72-fa50-4209-bc9c-f958d6e9012d%2F58_1_f8f5c2ad_1b42_4fd2_9d7d_9e42d008b78a_d78de810a9.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fpublic%2Fa686b38b-f133-46e8-9164-13a8c31f50a7%2F24_1_f8125d96_5c72_4652_b8fe_1a71a57bcd02_2173da7dc2.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F56af7817-5ba3-4230-815a-9abb630f9be6%2F01_1_14a463c5_de9a_42cd_983e_fe9b25125416_8a8bc15f43.jpeg&w=640&q=75",
+      "https://kisu-makeup.com/media/media-1730744824601-866871420.mp4"
+    ],
+    "attrs": [
+      {
+        "name": "Year",
+        "value": "2023",
+        "data_type": "int"
+      },
+      {
+        "name": "Battery Capacity",
+        "value": "111.5 kWh",
+        "data_type": "str"
+      },
+      {
+        "name": "Transmission",
+        "value": "Automatic",
+        "data_type": "str"
+      },
+      {
+        "name": "Range",
+        "value": "600 km",
+        "data_type": "str"
+      },
+      {
+        "name": "Color",
+        "value": "Gray",
+        "data_type": "str"
+      },
+      {
+        "name": "Condition",
+        "value": "New",
+        "data_type": "str"
+      },
+      {
+        "name": "Registered Car",
+        "value": "Yes",
+        "data_type": "str"
+      }
+    ],
+    "description": "The eco-friendly 2023 BMW iX electric SUV with impressive range and state-of-the-art technology.",
+    "category": 2,
+    "price": 1600000,
+    "city": "Addis Ababa",
+    "title": "BMW iX 2023 - Electric SUV",
+    "level": "diamond",
+    "thumbnail": "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F00044857-1ed1-4cb1-a277-de23ef97c32c%2F34_1_cf72e1dc_f41e_4043_9808_8d6bf81f3694_b52ef873ce.jpeg&w=640&q=75",
+    "isSold": false
+  },
+  {
+    "media": [
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2Fe81889fa-5647-49eb-babd-c764c4adc4d8%2Fdb46d476-5cff-4dcd-ace3-a4616157aca1%2F29_1_03a057cf_392d_4e81_9f5a_06365f2f00f2_d71873c06f.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2Ffbf5435a-8219-4738-9866-73219b3dfd3e%2F29730685-2b65-4da4-b080-a205e0c6741e%2F22_1_0261b005_a28c_46e4_b21e_cb53c1e158e3_b44e6ccb89.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F63b4ba51-39da-4bf9-8333-975a39aee7c2%2F143a9747-e616-4aea-8825-2739969aafc7%2F33_1_cb06be23_3cd1_46eb_9b11_7ac83f28fd78_3a2332ccec.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F36e9d4ec-3b89-41d1-aa15-3630b03885bf%2F233a4384-244d-4143-9395-a5819a06d243%2F46_1_50d35f50_3e6c_46a9_af6e_d1c6986720f2_dbded051d0.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2Fb3187fe1-aa1f-476f-b37d-8cd823b41db9%2Fc189a5bb-b21b-4c5b-aaec-d736eee10c74%2F59_1_1df38f4d_a52a_491f_b3f0_a27cf1030977_3b54f762dd.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2Fa694b263-181a-49ec-ab36-f4168175a5c5%2F07_1_a0562427_290e_463a_8b1e_7de88de31a94_888f0bc631.jpeg&w=640&q=75",
+      "https://kisu-makeup.com/media/media-1730744824528-702546957.mp4"
+    ],
+    "attrs": [
+      {
+        "name": "Year",
+        "value": "2023",
+        "data_type": "int"
+      },
+      {
+        "name": "Mileage",
+        "value": "1,000 km",
+        "data_type": "str"
+      },
+      {
+        "name": "Transmission",
+        "value": "Automatic",
+        "data_type": "str"
+      },
+      {
+        "name": "Engine",
+        "value": "3.0L Twin-Turbo",
+        "data_type": "str"
+      },
+      {
+        "name": "Color",
+        "value": "Blue",
+        "data_type": "str"
+      },
+      {
+        "name": "Condition",
+        "value": "New",
+        "data_type": "str"
+      },
+      {
+        "name": "Registered Car",
+        "value": "Yes",
+        "data_type": "str"
+      }
+    ],
+    "description": "A sporty 2023 Porsche 911 Carrera with exceptional handling and powerful engine.",
+    "category": 2,
+    "price": 1400000,
+    "city": "Addis Ababa",
+    "title": "Porsche 911 Carrera 2023 - Sport Edition",
+    "level": "bronze",
+    "thumbnail": "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2Fe81889fa-5647-49eb-babd-c764c4adc4d8%2Fdb46d476-5cff-4dcd-ace3-a4616157aca1%2F29_1_03a057cf_392d_4e81_9f5a_06365f2f00f2_d71873c06f.jpeg&w=640&q=75",
+    "isSold": false
+  },
+  {
+    "media": [
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F13366f37-066a-48b7-a22f-bfc6123a873b%2Fc9bee614-74b3-4039-84b0-e042bf3e2071%2F04_1_1952da6a_511b_4358_9649_3e7b73b32e14_794bbf2c49.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F13366f37-066a-48b7-a22f-bfc6123a873b%2Fd627e4c9-a289-4b17-a050-72a72add48b0%2F52_1_78e6fa9c_3702_445c_918f_9dec179c5425_3eb0fac89e.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F9f16cf17-62a2-4ec2-bc9b-d48453d54468%2Fc20c3147-c144-4ca1-ad85-0b8b3d0cfbb3%2F50_1_de9811c2_5bbf_4019_9081_191b2e7ce6f8_dc5fbf73b7.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2Fff709818-ceeb-4cb1-adf2-372045ea48ac%2F3166eda8-d35d-4ff5-a3b4-95c0c62b76ca%2F03_1_8461dc65_1d59_4eff_bdba_01980fc4269b_f645b7dcc3.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F9d9054b1-9fba-4a2a-8911-9afa9018e332%2Fe2d597ea-0d09-4156-9659-81a801955c70%2F57_1_5ca2fd6e_a08e_49f5_993d_eb8ba611e12f_733fb218cf.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F7d03206d-0464-4f07-a55a-454f60631c02%2F11016b3f-7986-489b-a668-6b607870696a%2F28_1_5645962a_1804_4909_873a_38330f9d8297_888e07b293.jpeg&w=640&q=75",
+      "https://kisu-makeup.com/media/media-1730744824492-898684319.mp4"
+    ],
+    "attrs": [
+      {
+        "name": "Year",
+        "value": "2022",
+        "data_type": "int"
+      },
+      {
+        "name": "Mileage",
+        "value": "2,000 km",
+        "data_type": "str"
+      },
+      {
+        "name": "Transmission",
+        "value": "Automatic",
+        "data_type": "str"
+      },
+      {
+        "name": "Engine",
+        "value": "4.5L V8 Diesel",
+        "data_type": "str"
+      },
+      {
+        "name": "Color",
+        "value": "White",
+        "data_type": "str"
+      },
+      {
+        "name": "Condition",
+        "value": "New",
+        "data_type": "str"
+      },
+      {
+        "name": "Registered Car",
+        "value": "Yes",
+        "data_type": "str"
+      }
+    ],
+    "description": "A robust 2022 Toyota Land Cruiser with superior off-road capabilities and luxury interior.",
+    "category": 2,
+    "price": 1200000,
+    "city": "Addis Ababa",
+    "title": "Toyota Land Cruiser 2022 - Off-Road Package",
+    "level": "silver",
+    "thumbnail": "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F13366f37-066a-48b7-a22f-bfc6123a873b%2Fc9bee614-74b3-4039-84b0-e042bf3e2071%2F04_1_1952da6a_511b_4358_9649_3e7b73b32e14_794bbf2c49.jpeg&w=640&q=75",
+    "isSold": false
+  },
+  {
+    "media": [
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F00044857-1ed1-4cb1-a277-de23ef97c32c%2F34_1_cf72e1dc_f41e_4043_9808_8d6bf81f3694_b52ef873ce.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F36e9d4ec-3b89-41d1-aa15-3630b03885bf%2F9b164c0b-da96-4427-8c79-f235b304a908%2F30_1_14456a71_26c0_4f2c_8fad_c0e08f063fee_6d63ebc079.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2Fe81889fa-5647-49eb-babd-c764c4adc4d8%2Fdb46d476-5cff-4dcd-ace3-a4616157aca1%2F29_1_03a057cf_392d_4e81_9f5a_06365f2f00f2_d71873c06f.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F63b4ba51-39da-4bf9-8333-975a39aee7c2%2F143a9747-e616-4aea-8825-2739969aafc7%2F33_1_cb06be23_3cd1_46eb_9b11_7ac83f28fd78_3a2332ccec.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F36e9d4ec-3b89-41d1-aa15-3630b03885bf%2F233a4384-244d-4143-9395-a5819a06d243%2F46_1_50d35f50_3e6c_46a9_af6e_d1c6986720f2_dbded051d0.jpeg&w=640&q=75",
+      "https://kisu-makeup.com/media/media-1730744824438-314502407.mp4"
+    ],
+    "attrs": [
+      {
+        "name": "Year",
+        "value": "2020",
+        "data_type": "int"
+      },
+      {
+        "name": "Mileage",
+        "value": "5,000 km",
+        "data_type": "str"
+      },
+      {
+        "name": "Transmission",
+        "value": "Automatic",
+        "data_type": "str"
+      },
+      {
+        "name": "Engine Type",
+        "value": "V12",
+        "data_type": "str"
+      },
+      {
+        "name": "Interior",
+        "value": "Leather",
+        "data_type": "str"
+      },
+      {
+        "name": "Condition",
+        "value": "New",
+        "data_type": "str"
+      },
+      {
+        "name": "Registered Car",
+        "value": "Yes",
+        "data_type": "str"
+      }
+    ],
+    "description": "The epitome of luxury, a 2020 Rolls-Royce Phantom with unparalleled craftsmanship and power.",
+    "category": 2,
+    "price": 3000000,
+    "city": "Addis Ababa",
+    "title": "Rolls-Royce Phantom 2020 - Exclusive Edition",
+    "level": "diamond",
+    "thumbnail": "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F00044857-1ed1-4cb1-a277-de23ef97c32c%2F34_1_cf72e1dc_f41e_4043_9808_8d6bf81f3694_b52ef873ce.jpeg&w=640&q=75",
+    "isSold": false
+  },
+  {
+    "media": [
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F36e9d4ec-3b89-41d1-aa15-3630b03885bf%2F233a4384-244d-4143-9395-a5819a06d243%2F46_1_50d35f50_3e6c_46a9_af6e_d1c6986720f2_dbded051d0.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2Fb3187fe1-aa1f-476f-b37d-8cd823b41db9%2Fc189a5bb-b21b-4c5b-aaec-d736eee10c74%2F59_1_1df38f4d_a52a_491f_b3f0_a27cf1030977_3b54f762dd.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2F7c87ce10-2475-4c57-afc6-4cb0affb1507%2F12_1_1c8fa354_00e9_41af_8831_6d71d958d41a_7435f34f42.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F32e30b46-e03f-442c-b96a-5d1b1d06c565%2Fa694b263-181a-49ec-ab36-f4168175a5c5%2F07_1_a0562427_290e_463a_8b1e_7de88de31a94_888f0bc631.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F8738ee83-134e-4939-8ebc-a78eba248562%2F1e526ae9-1711-4847-a9c7-f700c8db89e6%2F59_1_69521682_ff79_46cc_a476_29ac31d5f080_68c7903060.jpeg&w=640&q=75",
+      "https://kisu-makeup.com/media/media-1730744824392-806756280.mp4"
+    ],
+    "attrs": [
+      {
+        "name": "Year",
+        "value": "2021",
+        "data_type": "int"
+      },
+      {
+        "name": "Battery Capacity",
+        "value": "100 kWh",
+        "data_type": "str"
+      },
+      {
+        "name": "Transmission",
+        "value": "Automatic",
+        "data_type": "str"
+      },
+      {
+        "name": "Range",
+        "value": "652 km",
+        "data_type": "str"
+      },
+      {
+        "name": "Color",
+        "value": "Red",
+        "data_type": "str"
+      },
+      {
+        "name": "Condition",
+        "value": "New",
+        "data_type": "str"
+      },
+      {
+        "name": "Registered Car",
+        "value": "Yes",
+        "data_type": "str"
+      }
+    ],
+    "description": "High-performance 2021 Tesla Model S with full self-driving capabilities and enhanced range.",
+    "category": 2,
+    "price": 1300000,
+    "city": "Addis Ababa",
+    "title": "Tesla Model S 2021 - Long Range",
+    "level": "gold",
+    "thumbnail": "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F36e9d4ec-3b89-41d1-aa15-3630b03885bf%2F233a4384-244d-4143-9395-a5819a06d243%2F46_1_50d35f50_3e6c_46a9_af6e_d1c6986720f2_dbded051d0.jpeg&w=640&q=75",
+    "isSold": false
+  },
+  {
+    "media": [
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F7d03206d-0464-4f07-a55a-454f60631c02%2F11016b3f-7986-489b-a668-6b607870696a%2F28_1_5645962a_1804_4909_873a_38330f9d8297_888e07b293.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F307a6ae5-0845-46ef-8a3c-8ed35a0f2f8c%2Fcf804c7a-8b18-4018-b981-f1e30b44a6c9%2F50_1_7bdc9673_af8a_4272_9323_1f24261299b7_01d6001b50.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2Fe81889fa-5647-49eb-babd-c764c4adc4d8%2Fdb46d476-5cff-4dcd-ace3-a4616157aca1%2F29_1_03a057cf_392d_4e81_9f5a_06365f2f00f2_d71873c06f.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2Ffbf5435a-8219-4738-9866-73219b3dfd3e%2F29730685-2b65-4da4-b080-a205e0c6741e%2F22_1_0261b005_a28c_46e4_b21e_cb53c1e158e3_b44e6ccb89.jpeg&w=640&q=75",
+      "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F63b4ba51-39da-4bf9-8333-975a39aee7c2%2F143a9747-e616-4aea-8825-2739969aafc7%2F33_1_cb06be23_3cd1_46eb_9b11_7ac83f28fd78_3a2332ccec.jpeg&w=640&q=75",
+      "https://kisu-makeup.com/media/media-1730744824253-973907310.mp4"
+    ],
+    "attrs": [
+      {
+        "name": "Year",
+        "value": "2022",
+        "data_type": "int"
+      },
+      {
+        "name": "Mileage",
+        "value": "10,000 km",
+        "data_type": "str"
+      },
+      {
+        "name": "Transmission",
+        "value": "Automatic",
+        "data_type": "str"
+      },
+      {
+        "name": "Fuel Type",
+        "value": "Petrol",
+        "data_type": "str"
+      },
+      {
+        "name": "Color",
+        "value": "Black",
+        "data_type": "str"
+      },
+      {
+        "name": "Condition",
+        "value": "New",
+        "data_type": "str"
+      },
+      {
+        "name": "Registered Car",
+        "value": "Yes",
+        "data_type": "str"
+      }
+    ],
+    "description": "A luxurious 2022 Mercedes-Benz S-Class with premium features and advanced safety technologies.",
+    "category": 2,
+    "price": 1500000,
+    "city": "Addis Ababa",
+    "title": "Mercedes-Benz S-Class 2022 - Full Option",
+    "level": "diamond",
+    "thumbnail": "https://www.mekina.net/_next/image?url=https%3A%2F%2Fmekina.s3.eu-west-1.amazonaws.com%2Fcars%2Fprivate%2F7d03206d-0464-4f07-a55a-454f60631c02%2F11016b3f-7986-489b-a668-6b607870696a%2F28_1_5645962a_1804_4909_873a_38330f9d8297_888e07b293.jpeg&w=640&q=75",
+    "isSold": false
+  },
+  {
+    "description": "Modern 3-bedroom apartment with stunning city views, state-of-the-art amenities, and ample natural light.",
+    "price": 3500000,
+    "city": "Addis Ababa",
+    "title": "Luxury 3-Bedroom Apartment - City Center",
+    "level": "platinum",
+    "media": [
+      "https://pictures-ethiopia.jijistatic.com/4955494_MzAwLTY1MC1jNTk0NTk1M2Jm.webp",
+      "https://pictures-ethiopia.jijistatic.com/5792354_MzAwLTIyNS01YmI0MmUwNmMz.webp",
+      "https://pictures-ethiopia.jijistatic.com/5866122_MzAwLTQ2MC00YzgxZjQyYTMx.webp",
+      "https://pictures-ethiopia.jijistatic.com/3178868_MzAwLTYzNC0wNzg1YjRhY2Fi.webp"
+    ],
+    "thumbnail": "https://pictures-ethiopia.jijistatic.com/3178868_MzAwLTYzNC0wNzg1YjRhY2Fi.webp",
+    "attrs": [
+      {
+        "name": "Year Built",
+        "value": "2020",
+        "data_type": "int"
+      },
+      {
+        "name": "Bedrooms",
+        "value": "3",
+        "data_type": "int"
+      },
+      {
+        "name": "Bathrooms",
+        "value": "2",
+        "data_type": "int"
+      },
+      {
+        "name": "Size",
+        "value": "120 sqm",
+        "data_type": "str"
+      },
+      {
+        "name": "Furnishing",
+        "value": "Furnished",
+        "data_type": "str"
+      },
+      {
+        "name": "Parking",
+        "value": "Available",
+        "data_type": "str"
+      }
+    ],
+    "category": 1
+  },
+  {
+    "description": "Prime 500 sqm plot of land in a highly sought-after area, ideal for residential or commercial development.",
+    "price": 1000000,
+    "city": "Debre Zeit",
+    "title": "500 sqm Land for Sale - Prime Location",
+    "level": "gold",
+    "media": [
+      "https://pictures-ethiopia.jijistatic.com/4936004_MzAwLTQ1OS02ODI3YzJhNjA1.webp",
+      "https://pictures-ethiopia.jijistatic.com/5686293_MzAwLTEzNS0zOTJhYTFmODE5.webp",
+      "https://pictures-ethiopia.jijistatic.com/5703282_MzAwLTQwMC1hZDU1Y2ViZjM5.webp",
+      "https://pictures-ethiopia.jijistatic.com/5202326_MzAwLTEzOS04MGQ0YzlkNzYw.webp"
+    ],
+    "thumbnail": "https://pictures-ethiopia.jijistatic.com/5202326_MzAwLTEzOS04MGQ0YzlkNzYw.webp",
+    "attrs": [
+      {
+        "name": "Size",
+        "value": "500 sqm",
+        "data_type": "str"
+      },
+      {
+        "name": "Zoning",
+        "value": "Residential",
+        "data_type": "str"
+      },
+      {
+        "name": "Location Advantage",
+        "value": "Near Main Road",
+        "data_type": "str"
+      },
+      {
+        "name": "Water Access",
+        "value": "Available",
+        "data_type": "str"
+      },
+      {
+        "name": "Electricity Access",
+        "value": "Available",
+        "data_type": "str"
+      }
+    ],
+    "category": 1
+  },
+  {
+    "description": "Spacious 4-bedroom villa with a private garden and modern amenities in a quiet, family-friendly neighborhood.",
+    "price": 8500000,
+    "city": "Addis Ababa",
+    "title": "4-Bedroom Villa with Garden",
+    "level": "diamond",
+    "media": [
+      "https://pictures-ethiopia.jijistatic.com/4961847_MzAwLTY0Mi05MTU2MDc3Y2Ez.webp",
+      "https://pictures-ethiopia.jijistatic.com/4322378_MzAwLTQwMC1iZmE5MGI3MDUx.webp",
+      "https://pictures-ethiopia.jijistatic.com/5759103_MzAwLTUzMy0wYzcyOTAzYzY4.webp",
+      "https://pictures-ethiopia.jijistatic.com/5180956_MzAwLTY1MC0zZDAzM2VmZTY1.webp"
+    ],
+    "thumbnail": "https://pictures-ethiopia.jijistatic.com/5180956_MzAwLTY1MC0zZDAzM2VmZTY1.webp",
+    "attrs": [
+      {
+        "name": "Year Built",
+        "value": "2019",
+        "data_type": "int"
+      },
+      {
+        "name": "Bedrooms",
+        "value": "4",
+        "data_type": "int"
+      },
+      {
+        "name": "Bathrooms",
+        "value": "3",
+        "data_type": "int"
+      },
+      {
+        "name": "Size",
+        "value": "300 sqm",
+        "data_type": "str"
+      },
+      {
+        "name": "Furnishing",
+        "value": "Unfurnished",
+        "data_type": "str"
+      },
+      {
+        "name": "Garden",
+        "value": "Private",
+        "data_type": "str"
+      }
+    ],
+    "category": 1
+  },
+  {
+    "description": "10,000 sqm agricultural land suitable for farming or investment, with access to irrigation and main road.",
+    "price": 1500000,
+    "city": "Hawassa",
+    "title": "Agricultural Land - 10,000 sqm",
+    "level": "silver",
+    "media": [
+      "https://pictures-ethiopia.jijistatic.com/4680939_MzAwLTQwMC0wNDlkZGUyZWU1.webp",
+      "https://pictures-ethiopia.jijistatic.com/4387923_MzAwLTQwMC0xNjI3YzVhMDE5.webp",
+      "https://pictures-ethiopia.jijistatic.com/5468067_MzAwLTY1MC1lNGNhMzk2MTJj.webp",
+      "https://pictures-ethiopia.jijistatic.com/1721268_MzAwLTQwMC1iODUxODA4NjY3LTE.webp"
+    ],
+    "thumbnail": "https://pictures-ethiopia.jijistatic.com/1721268_MzAwLTQwMC1iODUxODA4NjY3LTE.webp",
+    "attrs": [
+      {
+        "name": "Size",
+        "value": "10,000 sqm",
+        "data_type": "str"
+      },
+      {
+        "name": "Soil Type",
+        "value": "Fertile",
+        "data_type": "str"
+      },
+      {
+        "name": "Water Access",
+        "value": "Available",
+        "data_type": "str"
+      },
+      {
+        "name": "Electricity Access",
+        "value": "Nearby",
+        "data_type": "str"
+      },
+      {
+        "name": "Road Access",
+        "value": "Main Road",
+        "data_type": "str"
+      }
+    ],
+    "category": 1
+  },
+  {
+    "description": "Cozy and fully-furnished studio apartment in the heart of the city, perfect for singles or young professionals.",
+    "price": 900000,
+    "city": "Addis Ababa",
+    "title": "Furnished Studio Apartment - Downtown",
+    "level": "gold",
+    "media": [
+      "https://pictures-ethiopia.jijistatic.com/5193272_MzAwLTEzOS0wMWRhNTBlM2M4.webp",
+      "https://pictures-ethiopia.jijistatic.com/3784174_MzAwLTIyNS1lZDY5ODVlMzU0.webp",
+      "https://pictures-ethiopia.jijistatic.com/5694507_MzAwLTMyOS0wNWIwMzczZjQy.webp",
+      "https://pictures-ethiopia.jijistatic.com/2013676_MzAwLTQwMC03ZTYxMDAzMDEw.webp"
+    ],
+    "thumbnail": "https://pictures-ethiopia.jijistatic.com/2013676_MzAwLTQwMC03ZTYxMDAzMDEw.webp",
+    "attrs": [
+      {
+        "name": "Year Built",
+        "value": "2021",
+        "data_type": "int"
+      },
+      {
+        "name": "Bedrooms",
+        "value": "1",
+        "data_type": "int"
+      },
+      {
+        "name": "Bathrooms",
+        "value": "1",
+        "data_type": "int"
+      },
+      {
+        "name": "Size",
+        "value": "35 sqm",
+        "data_type": "str"
+      },
+      {
+        "name": "Furnishing",
+        "value": "Fully Furnished",
+        "data_type": "str"
+      },
+      {
+        "name": "Parking",
+        "value": "Not Available",
+        "data_type": "str"
+      }
+    ],
+    "category": 1
+  },
+  {
+    "description": "700 sqm plot in a residential neighborhood with scenic views and excellent development potential.",
+    "price": 1200000,
+    "city": "Bahir Dar",
+    "title": "Residential Plot - 700 sqm",
+    "level": "silver",
+    "media": [
+      "https://pictures-ethiopia.jijistatic.com/4278540_MzAwLTE2OS0xMGIyZjdlYjQ0.webp",
+      "https://pictures-ethiopia.jijistatic.com/4731557_MzAwLTEzOS03ODE0MWM4ZTc5.webp",
+      "https://pictures-ethiopia.jijistatic.com/4575136_MzAwLTIyNS05NTQ3YjI1NzRj.webp",
+      "https://pictures-ethiopia.jijistatic.com/4438281_MzAwLTQwMC1mOGJhYjE1MTY0.webp"
+    ],
+    "thumbnail": "https://pictures-ethiopia.jijistatic.com/4438281_MzAwLTQwMC1mOGJhYjE1MTY0.webp",
+    "attrs": [
+      {
+        "name": "Size",
+        "value": "700 sqm",
+        "data_type": "str"
+      },
+      {
+        "name": "Zoning",
+        "value": "Residential",
+        "data_type": "str"
+      },
+      {
+        "name": "Location Advantage",
+        "value": "Quiet Neighborhood",
+        "data_type": "str"
+      },
+      {
+        "name": "Water Access",
+        "value": "Available",
+        "data_type": "str"
+      },
+      {
+        "name": "Electricity Access",
+        "value": "Available",
+        "data_type": "str"
+      }
+    ],
+    "category": 1
+  },
+  {
+    "description": "Spacious 5-bedroom family home in a quiet suburb with large backyard and close proximity to schools.",
+    "price": 5800000,
+    "city": "Adama",
+    "title": "5-Bedroom Family House - Spacious Yard",
+    "level": "diamond",
+    "media": [
+      "https://pictures-ethiopia.jijistatic.com/4946059_MzAwLTUxMi1hMjI5NjA0NTQ0.webp",
+      "https://pictures-ethiopia.jijistatic.com/4558561_MzAwLTIyNS0zMDJhOTU5NDRi.webp",
+      "https://pictures-ethiopia.jijistatic.com/4133067_MzAwLTQwMC04NzRmMjM2YWFl.webp",
+      "https://pictures-ethiopia.jijistatic.com/5302327_MzAwLTQwMC05OGQ1YzkyMjlh.webp"
+    ],
+    "thumbnail": "https://pictures-ethiopia.jijistatic.com/5302327_MzAwLTQwMC05OGQ1YzkyMjlh.webp",
+    "attrs": [
+      {
+        "name": "Year Built",
+        "value": "2015",
+        "data_type": "int"
+      },
+      {
+        "name": "Bedrooms",
+        "value": "5",
+        "data_type": "int"
+      },
+      {
+        "name": "Bathrooms",
+        "value": "3",
+        "data_type": "int"
+      },
+      {
+        "name": "Size",
+        "value": "250 sqm",
+        "data_type": "str"
+      },
+      {
+        "name": "Parking",
+        "value": "Available",
+        "data_type": "str"
+      },
+      {
+        "name": "Furnishing",
+        "value": "Semi-Furnished",
+        "data_type": "str"
+      }
+    ],
+    "category": 1
+  },
+  {
+    "description": "Prime 2,000 sqm commercial land located in a high-traffic area, suitable for retail or office complex development.",
+    "price": 5000000,
+    "city": "Addis Ababa",
+    "title": "Commercial Land - 2,000 sqm",
+    "level": "platinum",
+    "media": [
+      "https://pictures-ethiopia.jijistatic.com/4945807_MzAwLTQwMC1iYzJiYjdjOTJj.webp",
+      "https://pictures-ethiopia.jijistatic.com/4861707_MzAwLTUzMy0xNzU0MjVjODI0.webp",
+      "https://pictures-ethiopia.jijistatic.com/5446827_MzAwLTQ2OC02YTUzYWQ4ZWYz.webp",
+      "https://pictures-ethiopia.jijistatic.com/4788080_MzAwLTQwMC04MmEyMjU5ZjY4.webp",
+      "https://pictures-ethiopia.jijistatic.com/4923868_MzAwLTQwMC04OTA1Nzc5M2Mz.webp"
+    ],
+    "thumbnail": "https://pictures-ethiopia.jijistatic.com/4923868_MzAwLTQwMC04OTA1Nzc5M2Mz.webp",
+    "attrs": [
+      {
+        "name": "Size",
+        "value": "2,000 sqm",
+        "data_type": "str"
+      },
+      {
+        "name": "Zoning",
+        "value": "Commercial",
+        "data_type": "str"
+      },
+      {
+        "name": "Road Access",
+        "value": "Main Road",
+        "data_type": "str"
+      },
+      {
+        "name": "Water Access",
+        "value": "Available",
+        "data_type": "str"
+      },
+      {
+        "name": "Electricity Access",
+        "value": "Available",
+        "data_type": "str"
+      }
+    ],
+    "category": 1
+  }
+]

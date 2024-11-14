@@ -1,35 +1,37 @@
 const redisClient = require('../config/redisClient');
 
 const cacheMiddleware = (duration) => {
-    return async (req, res, next) => {
-      if (!redisClient.isReady) {
-        console.log('\n\n\tRedis not ready, skipping cache\n\n');
-        return next();
+  return async (req, res, next) => {
+    if (!redisClient.isReady) {
+      return next();
+    }
+
+    // Create a unique cache key including filters from headers
+    const filters = req.headers.filters ? JSON.parse(req.headers.filters) : {};
+    const cacheKey = `${req.originalUrl}-${JSON.stringify(filters)}`;
+    
+    try {
+      const cachedData = await redisClient.get(cacheKey);
+      
+      if (cachedData) {
+        console.log('Cache HIT:', cacheKey);
+        return res.status(200).json(JSON.parse(cachedData));
       }
-  
-      const key = req.originalUrl;
-      try {
-        const cachedData = await redisClient.get(key);
-        
-        if (cachedData) {
-          console.log('\n\n\tCache HIT:', key, '\n\n');
-          return res.status(200).json(JSON.parse(cachedData));
-        }
-        
-        console.log('\n\n\tCache MISS:', key, '\n\n');
-        res.originalJson = res.json;
-        res.json = async (data) => {
-          await redisClient.setEx(key, duration, JSON.stringify(data));
-          console.log('\n\n\tCached data for key:', key, '\n\n');
-          res.originalJson(data);
-        };
-        
-        next();
-      } catch (error) {
-        console.error('\n\n\tRedis cache error:', error, '\n\n');
-        next();
-      }
-    };
+      
+      console.log('Cache MISS:', cacheKey);
+      res.originalJson = res.json;
+      res.json = async (data) => {
+        await redisClient.setEx(cacheKey, duration, JSON.stringify(data));
+        console.log('Cached data for key:', cacheKey);
+        res.originalJson(data);
+      };
+      
+      next();
+    } catch (error) {
+      console.error('Redis cache error:', error);
+      next();
+    }
   };
+};
 
 module.exports = cacheMiddleware;

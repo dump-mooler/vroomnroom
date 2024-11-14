@@ -2,10 +2,14 @@ const redis = require('redis');
 
 const redisSocketPath = '/home/kisumake/tmp/redis.sock';
 
+// const redisClient = redis.createClient({
+//   socket: {
+//     path: redisSocketPath
+//   }
+// });
+
 const redisClient = redis.createClient({
-  socket: {
-    path: redisSocketPath
-  }
+  url: 'redis://localhost:6379'
 });
 
 const connectRedis = async () => {

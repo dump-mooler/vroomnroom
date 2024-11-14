@@ -1,6 +1,7 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/database");
 const Category = require("../models/category");
+const User = require("../models/user");
 
 const Advert = sequelize.define("Advert", {
   id: {
@@ -16,6 +17,13 @@ const Advert = sequelize.define("Advert", {
     type: DataTypes.INTEGER,
     references: {
       model: Category,
+      key: 'id'
+    }
+  },
+  posterId: {
+    type: DataTypes.INTEGER,
+    references: {
+      model: User,
       key: 'id'
     }
   },

@@ -7,6 +7,10 @@ const User = sequelize.define('User', {
     autoIncrement: true,
     primaryKey: true,
   },
+  fullName: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
   username: {
     type: DataTypes.STRING,
     allowNull: false,
@@ -24,6 +28,18 @@ const User = sequelize.define('User', {
     },
     set(value) {
       this.setDataValue('role', value.join(','));
+    },
+  },
+  phoneNumbers: {
+    type: DataTypes.TEXT,
+    allowNull: true,
+    get() {
+      const rawValue = this.getDataValue('phoneNumbers');
+      return rawValue ? rawValue.split(',') : [];
+    },
+    set(value) {
+      const phoneArray = Array.isArray(value) ? value : [];
+      this.setDataValue('phoneNumbers', phoneArray.join(','));
     },
   },
 });

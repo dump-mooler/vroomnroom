@@ -6,9 +6,11 @@ const Category = require("./models/category");
 async function seedAdmin() {
   try {
     const adminData = {
+      fullName: "Admin User",
       username: "admin",
       password: "adminpassword",
       role: ["admin", "manager"],
+      phoneNumbers: "+251985011172,+251968931531",
     };
 
     await sequelize.sync();
@@ -24,6 +26,7 @@ async function seedAdmin() {
     const hashedPassword = await bcrypt.hash(adminData.password, 10);
 
     await User.create({
+      fullName: adminData.fullName,
       username: adminData.username,
       password: hashedPassword,
       role: adminData.role,
@@ -42,9 +45,11 @@ async function seedAdmin() {
 async function seedManager() {
   try {
     const managerData = {
+      fullName: "Manager User",
       username: "manager",
       password: "manpassword",
       role: ["manager"],
+      phoneNumbers: "+251985011172,+251968931531",
     };
     await sequelize.sync();
 
@@ -59,6 +64,7 @@ async function seedManager() {
     const hashedPassword = await bcrypt.hash(managerData.password, 10);
 
     await User.create({
+      fullName: managerData.fullName,
       username: managerData.username,
       password: hashedPassword,
       role: managerData.role,

@@ -1,4 +1,4 @@
-const { Advert, Category } = require("../models");
+const { Advert, Category, User } = require("../models");
 const redisClient = require('../config/redisClient');
 
 const sequelize = require("sequelize");
@@ -6,7 +6,7 @@ const { Op } = require("sequelize");
 
 exports.createAdvert = async (req, res) => {
   try {
-    const newAdvert = await Advert.create(req.body);
+    const newAdvert = await Advert.create({...req.body, posterId: req.user.id});
 
     const keys = await redisClient.keys('/advert*');
     if (keys.length > 0) {
@@ -27,6 +27,10 @@ exports.getAdvert = async (req, res) => {
         {
           model: Category,
           attributes: ["id", "name"],
+        },
+        {
+          model: User,
+          attributes: ["id", "fullName", "username", "phoneNumbers", "role"],
         },
       ],
     });
@@ -124,6 +128,10 @@ exports.getAdverts = async (req, res) => {
           model: Category,
           attributes: ["id", "name"],
         },
+        {
+          model: User,
+          attributes: ["id", "username", "phoneNumbers", "role", "fullName"],
+        },
       ],
     });
 
@@ -134,6 +142,7 @@ exports.getAdverts = async (req, res) => {
       totalPages: Math.ceil(count / limit),
     });
   } catch (err) {
+    console.log(err)
     res.status(500).json({ error: err });
   }
 };
@@ -144,11 +153,18 @@ exports.closeAdvert = async (req, res) => {
     if (!_advert) {
       return res.status(404).json({ error: "Advert not found" });
     }
-    const advert = await Advert.update(
+    await Advert.update(
       { isSold: true },
       { where: { id: req.params.id } }
     );
-    res.status(201).json({ advert });
+
+    const keys = await redisClient.keys('/advert*');
+    if (keys.length > 0) {
+      await redisClient.del(keys);
+    }
+    
+    const updatedAdvert = await Advert.findByPk(req.params.id);
+    res.status(200).json({ advert: updatedAdvert });
   } catch (err) {
     res.status(500).json({ error: err });
   }

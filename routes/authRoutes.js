@@ -7,11 +7,12 @@ const {
   getUsers,
   getUser,
   deleteUser,
+  updateUser
 } = require("../controllers/authController");
 const { authMiddleware } = require("../middleware/authMiddleware");
 
 const validate = require("../middleware/validate");
-const { create, update } = require("../validations/userValidation");
+const { create, update, updateUserValidation } = require("../validations/userValidation");
 
 const router = express.Router();
 
@@ -25,6 +26,7 @@ router.put(
   validate(update),
   updatePassword
 );
+router.put("/update-user/:id", authMiddleware, validate(updateUserValidation), updateUser);
 router.delete("/:id", authMiddleware, deleteUser);
 router.post("/login", login);
 
