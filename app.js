@@ -8,6 +8,7 @@ const blogRoutes = require("./routes/blogRoutes");
 const uploadRoutes = require("./routes/uploadRoutes");
 const cors = require("cors");
 
+const rateLimit = require("express-rate-limit");
 
 const { seedAdmin, seedManager, seedCategory } = require("./seed");
 
@@ -28,6 +29,13 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Custom-Header', 'filters'],
 }));
+
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // Limit each IP to 100 requests per windowMs
+});
+
+app.use(limiter);
 
 app.use("/uploads", express.static("uploads"));
 
