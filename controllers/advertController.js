@@ -251,7 +251,7 @@ exports.closeAdvert = async (req, res) => {
       return res.status(404).json({ error: "Advert not found" });
     }
     await Advert.update(
-      { isSold: true },
+      { isSold: _advert.isSold ? false : true },
       { where: { id: req.params.id } }
     );
 
