@@ -318,7 +318,14 @@ exports.deleteAdvert = async (req, res) => {
     if (!advert) {
       return res.status(404).json({ error: "Advert not found" });
     }
+    
     await advert.destroy();
+    
+    const keys = await redisClient.keys('/advert*');
+    if (keys.length > 0) {
+      await redisClient.del(keys);
+    }
+    
     res.status(204).json();
   } catch (err) {
     res.status(500).json({ error: err });
